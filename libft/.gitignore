@@ -1,0 +1,4 @@
+# Excluye el DS_Store
+.DS_Store
+# Excluye todos los archivos generados despues de compilarlos .out
+*.out
