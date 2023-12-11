@@ -1,1 +1,6 @@
-libft/.gitignore
+#Excluir DS_Store
+.DS_Store
+
+#Excluir archivos de compilación .out
+*.out
+
