@@ -6,7 +6,7 @@
 /*   By: danmoren <danmoren@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 12:56:12 by danmoren          #+#    #+#             */
-/*   Updated: 2023/12/12 13:08:20 by danmoren         ###   ########.fr       */
+/*   Updated: 2023/12/12 13:12:45 by danmoren         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_isprint(int c)
 	else
 		return (0);
 }
-#include <stdio.h>
+/* #include <stdio.h>
 #include <ctype.h>
 
 int	main()
@@ -31,4 +31,4 @@ printf("ft_isprint debe dar 0: %d\n", ft_isprint(b));
 printf("ft_isprint debe dar 0: %d\n", ft_isprint(b));
 
 return(0);
-}
+} */
