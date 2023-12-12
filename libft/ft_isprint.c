@@ -1,38 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: danmoren <danmoren@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/12 11:18:34 by danmoren          #+#    #+#             */
-/*   Updated: 2023/12/12 12:53:31 by danmoren         ###   ########.fr       */
+/*   Created: 2023/12/12 12:56:12 by danmoren          #+#    #+#             */
+/*   Updated: 2023/12/12 13:08:20 by danmoren         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-int	ft_isalnum(int c)
+int	ft_isprint(int c)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c<= 122) || (c >= 48 && c<= 57))
+	if (c >= 32 && c <= 126)
 		return (1);
 	else
 		return (0);
 }
-/* #include <ctype.h>
 #include <stdio.h>
+#include <ctype.h>
 
-int main()
+int	main()
 {
-	int c = 'q';
-	int b = '5';
-    int g = '?';
+int a = 56;
+int b = 253;
 
-	printf("ft_isalnum: %d\n", ft_isalnum(c));
-	printf("isalnum: %d\n", isalnum(c));
-	printf("ft_isalnum: %d\n", ft_isalnum(b));
-	printf("isalnum: %d\n", isalnum(b));
-    printf("ft_isalnum: %d\n", ft_isalnum(g));
-    printf("isalnum: %d\n", isalnum(g));
-    
-    return (0);
-} */
+printf("ft_isprint debe dar 1: %d\n", ft_isprint(a));
+printf("isprint debe dar 1: %d\n", isprint(a));
+printf("ft_isprint debe dar 0: %d\n", ft_isprint(b));
+printf("ft_isprint debe dar 0: %d\n", ft_isprint(b));
+
+return(0);
+}
