@@ -1,14 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ isalnum.c                                      :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: danmoren <danmoren@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/12 10:54:30 by danmoren          #+#    #+#             */
-/*   Updated: 2023/12/12 11:11:00 by danmoren         ###   ########.fr       */
+/*   Created: 2023/12/12 11:18:34 by danmoren          #+#    #+#             */
+/*   Updated: 2023/12/12 11:34:32 by danmoren         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 int ft_isalnum(int c)
 {
@@ -18,7 +19,21 @@ int ft_isalnum(int c)
         return (0);
 }
 
+#include <ctype.h>
+#include <stdio.h>
 
+int main()
+{
+	int c = 'q';
+	int b = '5';
+    int g = '?';
 
-
-#include <ctype.h> //archivo de encabezado donde se define isalnum
+	printf("ft_isalnum: %d\n", ft_isalnum(c));
+	printf("isalnum: %d\n", isalnum(c));
+	printf("ft_isalnum: %d\n", ft_isalnum(b));
+	printf("isalnum: %d\n", isalnum(b));
+    printf("ft_isalnum: %d\n", ft_isalnum(g));
+    printf("isalnum: %d\n", isalnum(g));
+    
+    return (0);
+}
